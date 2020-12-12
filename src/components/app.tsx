@@ -1,10 +1,9 @@
 import { FunctionalComponent, h } from 'preact';
 import { Route, Router, RouterOnChangeArgs } from 'preact-router';
-
-import NotFoundPage from '../routes/notfound';
+import { Home } from '../routes/home';
+import { Notfound } from '../routes/notfound';
+import { Profile } from '../routes/profile';
 import { Header } from './header/Header';
-import Home from 'src/routes/home';
-import Profile from 'src/routes/profile';
 
 const App: FunctionalComponent = () => {
   let currentUrl: string;
@@ -19,7 +18,7 @@ const App: FunctionalComponent = () => {
         <Route path="/" component={Home} />
         <Route path="/profile/" component={Profile} user="me" />
         <Route path="/profile/:user" component={Profile} />
-        <NotFoundPage default />
+        <Notfound default />
       </Router>
     </div>
   );

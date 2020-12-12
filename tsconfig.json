@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "esModuleInterop": true,
     "jsx": "react",
     "jsxFactory": "h",
@@ -12,8 +11,5 @@
     "moduleResolution": "node",
     "strict": true,
     "target": "es5"
-  },
-  "include": [
-    "src"
-  ]
+  }
 }

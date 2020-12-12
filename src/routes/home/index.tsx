@@ -1,7 +1,7 @@
 import { FunctionalComponent, h } from 'preact';
 import style from './style.css';
 
-const Home: FunctionalComponent = () => {
+export const Home: FunctionalComponent = () => {
   return (
     <div class={style.home}>
       <h1>Home</h1>
@@ -9,5 +9,3 @@ const Home: FunctionalComponent = () => {
     </div>
   );
 };
-
-export default Home;
