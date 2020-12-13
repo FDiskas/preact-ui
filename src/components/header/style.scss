@@ -1,0 +1,44 @@
+.header {
+  @apply relative;
+
+  height: 56px;
+
+  i {
+    @apply mr-2;
+  }
+
+  .wrapper {
+    @apply bg-black;
+    @apply opacity-60;
+    @apply absolute top-0 bottom-0 left-0 right-0;
+  }
+
+  .content {
+    @apply absolute top-0 bottom-0 left-0 right-0;
+    @apply flex flex-row items-center;
+    @apply z-10;
+
+    > div {
+      @apply flex-grow px-5;
+    }
+  }
+
+  h1 {
+    @apply text-center;
+
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .time {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+  }
+
+  .status {
+    @apply flex flex-row justify-end;
+
+    > div {
+      @apply ml-5;
+    }
+  }
+}

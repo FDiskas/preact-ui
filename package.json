@@ -4,7 +4,7 @@
   "license": "MIT",
   "description": "UI for the altv game",
   "scripts": {
-    "start": "parcel src/index.html --no-autoinstall",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html --target node --bundle-node-modules --no-source-maps --experimental-scope-hoisting",
     "preserve": "yarn build",
     "serve": "serve dist -s -n",
@@ -14,9 +14,10 @@
     "pretest": "npm run lint:css"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "preact": "*",
     "preact-router": "^3.2.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^1.9.6"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -30,6 +31,7 @@
     "postcss-modules": "^3.2.2",
     "preact-cli": "^3.0.5",
     "prettier": "^2.2.1",
+    "sass": "^1.30.0",
     "serve": "^11.3.2",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
