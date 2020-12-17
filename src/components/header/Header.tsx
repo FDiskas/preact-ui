@@ -1,14 +1,26 @@
 import { FunctionalComponent, h } from 'preact';
+import { useState, useEffect } from 'preact/hooks';
 import styles from './style.scss';
 
 export const Header: FunctionalComponent = () => {
+  const [time, setTime] = useState<number>(Date.now());
+
+  useEffect(() => {
+    const timer = window.setInterval(() => setTime(Date.now()), 1000);
+
+    // gets called just before navigating away from the route
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <header class={styles.header}>
       <div class={styles.wrapper} />
       <div class={styles.content}>
         <div class={styles.time}>
           <i class="far fa-clock" />
-          16:45
+          {new Date(time).toLocaleTimeString('lt-LT')}
         </div>
         <div>
           <h1>Server Name</h1>

@@ -5,7 +5,7 @@
   "description": "UI for the altv game",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --target node --bundle-node-modules --no-source-maps --experimental-scope-hoisting",
+    "build": "parcel build --public-url . src/index.html --target node --bundle-node-modules --no-source-maps --experimental-scope-hoisting --out-dir ../../server/src-copy/hud/client/html",
     "preserve": "yarn build",
     "serve": "serve dist -s -n",
     "lint": "eslint . --cache --fix --ext .ts,.tsx",
