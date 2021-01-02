@@ -5,8 +5,8 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "css.lint.unknownAtRules": "ignore",
-  "eslint.packageManager": "npm",
-  "npm.packageManager": "npm",
-  "prettier.packageManager": "npm",
+  "eslint.packageManager": "yarn",
+  "npm.packageManager": "yarn",
+  "prettier.packageManager": "yarn",
   "stylelint.autoFixOnSave": true
 }

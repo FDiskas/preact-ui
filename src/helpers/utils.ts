@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const handlers: { [key: string]: (...args: any[]) => void } = {};
 const altMock = {
   emitView: (name: string, ...args: any[]) => {
@@ -11,7 +12,8 @@ const altMock = {
   emit: (...args: any[]) => {
     console.log(args);
   },
-  on: (name: string, cb: () => void) => {
+  // eslint-disable-next-line no-unused-vars
+  on: (name: string, cb: (data?: any) => void) => {
     handlers[name] = cb;
     console.log('.on(', name, ')');
   },
@@ -24,7 +26,7 @@ const altMock = {
 };
 
 window.alt = window.alt ?? altMock;
-
+//
 // if (typeof alt === 'undefined') {
 //   window.alt = altMock;
 // }

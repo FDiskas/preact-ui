@@ -3,6 +3,7 @@ import { Route, Router, RouterOnChangeArgs } from 'preact-router';
 import { Home } from '../routes/home';
 import { Profile } from '../routes/profile';
 import { Header } from './header/Header';
+import { Speedometer } from './speedometer/Speedometer';
 
 const App: FunctionalComponent = () => {
   let currentUrl: string;
@@ -23,6 +24,7 @@ const App: FunctionalComponent = () => {
         <Route path="/profile/" component={Profile} user="me" />
         <Route path="/profile/:user" component={Profile} />
       </Router>
+      <Speedometer />
     </div>
   );
 };

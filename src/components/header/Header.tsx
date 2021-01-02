@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 export const Header: FunctionalComponent = () => {
   const [time, setTime] = useState<number>(Date.now());

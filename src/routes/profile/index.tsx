@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
-import style from './style.css';
+import style from './style.scss';
 
 interface Props {
   user: string;

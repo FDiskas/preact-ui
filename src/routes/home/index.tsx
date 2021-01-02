@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from 'preact';
 import { Link } from 'preact-router';
-import style from './style.css';
+import style from './style.scss';
 
 export const Home: FunctionalComponent = () => {
   return (
